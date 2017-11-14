@@ -1,0 +1,17 @@
+@import '~assets/images/sass/mixins';
+$padding-head_body:4% 8% 4% 8%;
+.button{
+    &__primary{
+        @include button;
+        background-color:$color__primary--black;
+        color: $color__primary--light; 
+        }
+
+    &__inverse{
+        @include button;
+        background-color: $color__primary--light;
+        color: $color__primary--black;
+        }
+}
+
+
