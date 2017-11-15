@@ -8,6 +8,8 @@ import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
 import { EmptyComponent } from './empty/empty.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { StoresComponent } from './stores/stores.component';
+import { AccordionModule } from "ng2-accordion";
 
 
 @NgModule({
@@ -18,10 +20,11 @@ import { GalleryComponent } from './gallery/gallery.component';
     HeaderComponent,
     FooterComponent,
     EmptyComponent,
-    GalleryComponent
+    GalleryComponent,
+    StoresComponent
   ],
   imports: [
-    BrowserModule, RoutingModule
+    BrowserModule, RoutingModule, AccordionModule
   ],
   providers: [],
   bootstrap: [AppComponent, //RoutingComponents// 
